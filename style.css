@@ -1,116 +1,38 @@
-#head_title{
+.container{
     position: absolute;
+    left: 0;
+    right: 0;
     top: 0;
-    left: 0;
-    right: 0;
-    height: 100px;
-    background-color: ffffff;
-}
-#logo{
-    position:  absolute;
-    top: 20px;
-    left: 15%;
-    width: 90px;
-}
-#search{
-    position: absolute;
-    top: 35px;
-    left: 30%;
-    width: 450px;
-    height: 20px;
-    border-style: solid;
-    border-color: #ff0000;
-    border-radius: 10px;
-    outline: none;
-    border-radius: 40px 40px 40px 40px;
-}
-#register{
-    position: absolute;
-    top: 37px;
-    right: 80px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 50px 300px 1fr 100px;
+    grid-gap: 0;
+    height: 150vh;
+    grid-template-areas: 
+    "head_title head_title"
+    "top_menu top_menu"
+    "banner banner"
+    "main_content main_content"
+    "footer footer";
 }
 
-
+#head_title{
+    background-color: #E0AFA0;
+    grid-area: head_title;
+}
 #top_menu{
-    z-index: 10;
-    position: absolute;
-    top: 100px;
-    left: 0;
-    right: 0;
-    background-color: #b30a32;
-    height: 50px;
-    box-shadow: gray 0px 10px 10px 5px;
+    background-color: #cab09a;
+    grid-area: top_menu;
 }
-#m_btn{
-    position: absolute;
-    top: 10px;
-    height: 30px;
-    left: 15%;
-}
-#menu_list{
-    color: white;
-    position: absolute;
-    top: 15px;
-    left: 30%;
-}
-#mlist1{
-    position: relative;
-    left: 40px;
-}
-#mlist2{
-    position: relative;
-    left: 80px;
-}
-#mlist3{
-    position: relative;
-    left: 120px;
-}
-#mlist4{
-    position: relative;
-    left: 150px;
-}
-
 #banner{
-    z-index: 0;
-    position: absolute;
-    top: 150px;
-    left: 0;
-    right: 0;
-    height: 500px;
-    background-size: 100%;
-    background-image: url('design_src/인스타.png');
-    background-position: center;
+    background-color: #a8968c;
+    grid-area: banner;
 }
-
-#main_content{}
-
-#content_1{
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 650px;
-    height: 800px;
-    background-color: #fff3f6;
+#main_content{
+    background-color: #F4F3EE;
+    grid-area: main_content;
 }
-#c1_item1{
-    position: absolute;
-    height: 100px;
-    z-index: 101;
-    width: 100px;
-    top: 80px;
-    left: 20%;
-    background-size: 100%;
-    background-image: url('design_src/loupe.png');
-    background-position: center;
-}
-#c1_item2{
-    position: relative;
-    height: 100px;
-    z-index: 101;
-    width: 100px;
-    top: 80px;
-    left: 70%;
-    background-size: 100%;
-    background-image: url('design_src/loupe.png');
-    background-position: center;
+#footer{
+    background-color: #BCB8B1;
+    grid-area: footer;
 }
