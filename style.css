@@ -26,7 +26,7 @@
 }
 #banner{
     background-color: #a8968c;
-    grid-area: banner;
+    grid-area: banner;  
 }
 #main_content{
     background-color: #F4F3EE;
@@ -35,4 +35,30 @@
 #footer{
     background-color: #BCB8B1;
     grid-area: footer;
+}
+
+#logo{
+    position: relative;
+    top: 20px;
+    padding-left: 20px;
+    width: 100px;
+}
+#search{
+    position: absolute;
+    display: inline-block;
+    margin-top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 20px;
+    outline: none;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: red;
+}
+#register{
+    position: absolute;
+    margin-top: 40px;
+    margin-right: 20px;
+    right: 0;
 }
