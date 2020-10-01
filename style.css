@@ -5,7 +5,7 @@
     top: 0;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 50px 300px 1fr 100px;
+    grid-template-rows: 100px 50px 850px 1fr 100px;
     grid-gap: 0;
     height: 150vh;
     grid-template-areas: 
@@ -25,12 +25,16 @@
     grid-area: top_menu;
 }
 #banner{
-    background-color: #a8968c;
+    /* background-color: #a8968c; */
     grid-area: banner;  
+    background-image: url('design_src/인스타.png');
+    background-size: cover;
+    background-position: 0% 30%;
 }
 #main_content{
-    background-color: #F4F3EE;
+    /* background-color: #F4F3EE; */
     grid-area: main_content;
+    /* background-image: url('/design_src/인스타-3.png'); */
 }
 #footer{
     background-color: #BCB8B1;
@@ -46,13 +50,13 @@
 #search{
     position: absolute;
     display: inline-block;
-    margin-top: 40px;
-    left: 50%;
     transform: translateX(-50%);
+    margin-top: 35px;
+    left: 50%;
     width: 50%;
     height: 20px;
     outline: none;
-    border-style: solid;
+    border-style: solid;    
     border-radius: 10px;
     border-color: red;
 }
@@ -61,4 +65,63 @@
     margin-top: 40px;
     margin-right: 20px;
     right: 0;
+}
+
+#m_btn{
+    position: relative;
+    top: 10px;
+    width: 30px;
+    padding-left: 10px;
+}
+#menu_list{
+    position: relative;
+    padding-left: 10%;
+}
+#menu_list a{
+    text-decoration: none;
+    color: white;
+}
+.m1{
+    position: relative;
+    left: 10%;
+}
+.m2{
+    position: relative;
+    left: 20%;
+}
+.m3{
+    position: relative;
+    left: 30%;
+}
+.m4{
+    position: relative;
+    left: 40%;
+}
+.m5{
+    position: relative;
+    left: 50%;
+}
+
+#content_1{
+    position: relative;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#itm1{
+    position: relative;
+    /* display: inline-block; */
+    height: 450px;
+    background-image: url('design_src/loupe.png');
+    background-size: 450px 450px;
+    background-repeat: no-repeat;
+}
+#itm2{
+    position: relative;
+    /* display: inline-block; */
+    height: 450px;
+    background-image: url('design_src/loupe.png');
+    background-size: 450px 450px;
+    background-repeat: no-repeat;
+    left: 70%;
 }
