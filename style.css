@@ -1,3 +1,6 @@
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
 .container{
     position: absolute;
     overflow: hidden;
@@ -19,11 +22,12 @@
 }
 
 #head_title{
-    background-color: #E0AFA0;
+    background-color: white;
     grid-area: head_title;
 }
 #top_menu{
-    background-color: #cab09a;
+    font-weight: 100;
+    background-color: #ff5353;
     grid-area: top_menu;
 }
 #banner{
@@ -39,7 +43,7 @@
     /* background-image: url('/design_src/인스타-3.png'); */
 }
 #footer{
-    background-color: #BCB8B1;
+    background-color: #ff5353;
     grid-area: footer;
 }
 
@@ -105,6 +109,7 @@
 }
 
 #content_1{
+    font-weight: 100;
     position: relative;
     padding-top: 20px;
     /* padding-left: 20px; */
@@ -132,13 +137,14 @@
 }
 .p_name{
     display: inline-block;
-    color: #b38c8c;
+    color: #ff5353;
     position: relative;
     top: 450px;
 }
 .p_price{
+    font-size: 30px;
     display: inline-block;
-    color: #b38c8c;
+    color: #ff5353;
     position: absolute;
     top: 470px;
     left: 0;
