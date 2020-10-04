@@ -10,14 +10,15 @@ body{
     bottom: 0;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 50px 850px 700px 100px;
+    grid-template-rows: 100px 50px 850px 700px 700px 100px;
     grid-gap: 0;
-    height: 1800px;
+    height: 2500px;
     grid-template-areas: 
     "head_title head_title"
     "top_menu top_menu"
     "banner banner"
-    "main_content main_content"
+    "content_1 content_1"
+    "content_2 content_2"
     "footer footer";
 }
 
@@ -36,11 +37,6 @@ body{
     background-image: url('design_src/인스타.png');
     background-size: cover;
     background-position: 0% 30%;
-}
-#main_content{
-    /* background-color: #F4F3EE; */
-    grid-area: main_content;
-    /* background-image: url('/design_src/인스타-3.png'); */
 }
 #footer{
     background-color: #ff5353;
@@ -109,13 +105,15 @@ body{
 }
 
 #content_1{
+    grid-area: content_1;
     font-weight: 100;
     position: relative;
     padding-top: 20px;
+    background-color: rgb(255, 241, 241);
     /* padding-left: 20px; */
     /* padding-right: 20px; */
 }
-#itm1{
+#c1_itm1{
     position: relative;
     /* display: inline-block; */
     height: 450px;
@@ -125,7 +123,7 @@ body{
     left: 15%;
     top: 80px;
 }
-#itm2{
+#c1_itm2{
     position: relative;
     /* display: inline-block; */
     height: 450px;
@@ -133,19 +131,68 @@ body{
     background-size: 450px 450px;
     background-repeat: no-repeat;
     left: 40%;
-    bottom: 20px;
+    bottom: 25px;
 }
-.p_name{
+.c1_p_name{
     display: inline-block;
     color: #ff5353;
     position: relative;
     top: 450px;
 }
-.p_price{
+.c1_p_price{
     font-size: 30px;
     display: inline-block;
     color: #ff5353;
     position: absolute;
     top: 470px;
     left: 0;
+}
+
+#content_2{
+    grid-area: content_2;
+    position: relative;
+    bottom: 0;
+    background-color: rgb(255, 248, 248);
+}
+
+#c2_itm1{
+    position: relative;
+    background-size:  cover;
+    height: 600px;
+    width: 450px;
+    background-repeat: no-repeat;
+    background-image: url('design_src/itm_bag.png');
+    top: 30px;
+    left: 15%;
+    box-shadow: -10px 10px 0px rgb(255, 213, 213);
+}
+#c2_itm2{
+    position: relative;
+    left: 40vw;
+    top: 20px;
+    /* text-align: right; */
+}
+#c2_itm2 span{
+    position: absolute;
+    right: 0;
+    font-size: 50px;
+    font-weight: 500;
+    color: #ff5353;
+}
+#c2_itm2 p{
+    position: relative;
+    top: 80px;
+    text-align: right;
+    font-weight: 100;
+    color: #ff5353;
+}
+#c2_itm3{
+    position: relative;
+    background-image: url('design_src/logo.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 450px;
+    top: 180px;
+    left: 40vw;
 }
