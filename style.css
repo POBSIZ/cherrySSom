@@ -10,9 +10,9 @@ body{
     bottom: 0;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 50px 850px 700px 700px 100px;
+    grid-template-rows: 100px 50px 850px 700px 700px 300px;
     grid-gap: 0;
-    height: 2500px;
+    height: 2700px;
     grid-template-areas: 
     "head_title head_title"
     "top_menu top_menu"
@@ -82,6 +82,9 @@ body{
 #menu_list a{
     text-decoration: none;
     color: white;
+}#menu_list a:hover{
+    color: #a04747;
+    transition: .3s;
 }
 .m1{
     position: relative;
@@ -120,7 +123,7 @@ body{
     background-image: url('design_src/itm_bag.png');
     background-size: 450px 450px;
     background-repeat: no-repeat;
-    left: 15%;
+    left: 23%;
     top: 80px;
 }
 #c1_itm2{
@@ -130,7 +133,7 @@ body{
     background-image: url('design_src/itm_bag.png');
     background-size: 450px 450px;
     background-repeat: no-repeat;
-    left: 40%;
+    left: 30%;
     bottom: 25px;
 }
 .c1_p_name{
@@ -163,12 +166,12 @@ body{
     background-repeat: no-repeat;
     background-image: url('design_src/itm_bag.png');
     top: 30px;
-    left: 15%;
+    left: 23%;
     box-shadow: -10px 10px 0px rgb(255, 213, 213);
 }
 #c2_itm2{
     position: relative;
-    left: 40vw;
+    left: 30vw;
     top: 20px;
     /* text-align: right; */
 }
@@ -194,5 +197,5 @@ body{
     width: 450px;
     height: 450px;
     top: 180px;
-    left: 40vw;
+    left: 30vw;
 }
