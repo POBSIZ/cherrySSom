@@ -77,9 +77,21 @@
                 </div>
             </div>
             <div id="page_num">
-                <button id="previous_page"><span></span></button>
-                <button id="next_page"><span></span></button>
+                <button id="previous_page" onclick="previous();"><img src="../src/next.png" alt=""></button>
+                <span style="font-weight: 500;"><a href="">1</a></span>
+                <span><a href="">2</a></span>
+                <span><a href="">3</a></span>
+                <button id="next_page" onclick="next()"><img src="../src/next.png" alt=""></button>
             </div>
+            <script>
+                var nextBtn = document.querySelector('#page_num ')
+                function next(){
+                    alert('next')
+                }
+                function previous(){
+                    alert('previous')
+                }
+            </script>
         </div>
         <div id="footer">
             <!-- Footer -->

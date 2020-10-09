@@ -184,20 +184,27 @@ body{
     left: 50%;   
 }
 #page_num button{
-    padding-top: -20px;
     outline: none;
     border: none;
     background-color: #ffffff;
     border-radius: 40px 40px 40px 40px;
+}#page_num button img{
+    height: 30px;
+}
+#page_num button:hover{
+    background-color: #ffa0a0;
 }
 #previous_page{
     transform-origin:50% 50%;
     transform:rotate(180deg);
-}#previous_page:hover{
-    background-color: #ffe0e0;
+}#previous_page:active{
+    box-shadow: inset #a36c6c -5px -5px 5px;
 }
-#next_page{
-}#next_page:hover{
-    background-color: #ffe0e0;
+#next_page:active{
+    box-shadow: inset #a36c6c 5px 5px 5px;
 }
-
+#page_num span{
+    font-size: 20px;
+    position: relative;
+    bottom: 8px;
+}
