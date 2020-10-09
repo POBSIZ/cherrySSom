@@ -184,18 +184,20 @@ body{
     left: 50%;   
 }
 #page_num button{
+    padding-top: -20px;
     outline: none;
     border: none;
     background-color: #ffffff;
+    border-radius: 40px 40px 40px 40px;
 }
 #previous_page{
     transform-origin:50% 50%;
     transform:rotate(180deg);
 }#previous_page:hover{
-    background-color: #ffa0a0;
+    background-color: #ffe0e0;
 }
 #next_page{
 }#next_page:hover{
-    background-color: #ffa0a0;
+    background-color: #ffe0e0;
 }
 
