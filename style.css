@@ -34,9 +34,20 @@ body{
 #banner{
     /* background-color: #a8968c; */
     grid-area: banner;  
+}
+.ban_img{
+    position: relative;
+    display: inline-block;
+    height: 850px;
+    width: 100%;
     background-image: url('design_src/인스타.png');
     background-size: cover;
     background-position: 0% 30%;
+    background-repeat: no-repeat;
+}#slider{
+    position: relative;
+    overflow: hidden;
+    right: 50%;
 }
 #footer{
     background-color: #ff5353;
