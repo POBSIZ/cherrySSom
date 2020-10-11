@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="slider.js"></script>
     <title>Cherryssom</title>
 </head>
 <body>
@@ -40,6 +39,25 @@
                 <div class="ban_img"></div>
             </div>
         </div>
+        <script>
+            const SHOWING_CLASS = "show";
+            const firstSlide = document.querySelector(".ban_img:first-child");
+            const Slide = () => {
+            const currentSlide = document.querySelector(`.${SHOWING_CLASS}`);
+            if (currentSlide) {
+                currentSlide.classList.remove(SHOWING_CLASS);
+                const nextSlide = currentSlide.nextElementSibling;
+                if (nextSlide) {
+                nextSlide.classList.add(SHOWING_CLASS);
+                } else {
+                firstSlide.classList.add(SHOWING_CLASS);
+                }
+            } else {
+                firstSlide.classList.add(SHOWING_CLASS);
+            }
+            };
+            setInterval(Slide, 2500);
+        </script>
     
         <div id="content_1">
             <div id="c1_itm1">

@@ -35,19 +35,35 @@ body{
     /* background-color: #a8968c; */
     grid-area: banner;  
 }
-.ban_img{
+#slider{
+    /* display: table; */
     position: relative;
-    display: inline-block;
-    height: 850px;
-    width: 100%;
-    background-image: url('design_src/인스타.png');
+    /* overflow: hidden; */
+    /* width: 400%; */
+    /* left: 0; */
+    right: 0%;
+}
+.ban_img{
+    /* display: inline-block; */
+    position: absolute;
     background-size: cover;
     background-position: 0% 30%;
     background-repeat: no-repeat;
-}#slider{
-    position: relative;
-    overflow: hidden;
-    right: 50%;
+    /* top: 0; */
+    height: 850px;
+    width: 100%;
+    z-index: 2;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    transform: scale(0.9);
+}.ban_img:nth-child(1){background-image: url('design_src/인스타.png');}
+.ban_img:nth-child(2){background-image: url('design_src/6-3.png');}
+.ban_img:nth-child(3){background-image: url('design_src/4-2.png');}
+.ban_img:nth-child(4){background-image: url('design_src/1-2.png');}
+.show{
+    z-index: 3;
+    opacity: 1;
+    transform: scale(1);
 }
 #footer{
     background-color: #ff5353;
