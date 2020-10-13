@@ -54,7 +54,7 @@ body{
     width: 100%;
     z-index: 2;
     opacity: 0;
-    transition: all 1s ease-in-out;
+    transition: all .4s ease-in-out;
     transform: scale(0.9);
 }.ban_img:nth-child(1){background-image: url('design_src/인스타.png');}
 .ban_img:nth-child(2){background-image: url('design_src/6-3.png');}

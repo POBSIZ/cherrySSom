@@ -38,25 +38,39 @@
                 <div class="ban_img"></div>
                 <div class="ban_img"></div>
             </div>
+            <button>next</button>
+            <button>prev</button>
+            <button>stop</button>
+            <button>play</button>
         </div>
-        <script>
+        <script id="slider_script">
             const SHOWING_CLASS = "show";
             const firstSlide = document.querySelector(".ban_img:first-child");
             const Slide = () => {
             const currentSlide = document.querySelector(`.${SHOWING_CLASS}`);
-            if (currentSlide) {
-                currentSlide.classList.remove(SHOWING_CLASS);
-                const nextSlide = currentSlide.nextElementSibling;
-                if (nextSlide) {
-                nextSlide.classList.add(SHOWING_CLASS);
+            const nextSlide = currentSlide.nextElementSibling;
+            const prevSlide =  currentSlide.previousElementSibling;
+            var slide_T=2500;
+
+            function autoSlide(slide_T){
+                if (currentSlide) {
+                    currentSlide.classList.remove(SHOWING_CLASS);
+                    if (nextSlide) {
+                    nextSlide.classList.add(SHOWING_CLASS);
+                    } else {
+                    firstSlide.classList.add(SHOWING_CLASS);
+                    }
                 } else {
-                firstSlide.classList.add(SHOWING_CLASS);
+                    firstSlide.classList.add(SHOWING_CLASS);
                 }
-            } else {
-                firstSlide.classList.add(SHOWING_CLASS);
+                };
+                setInterval(Slide, slide_T);
             }
-            };
-            setInterval(Slide, 2500);
+            autoSlide(slide_T);
+
+
+
+
         </script>
     
         <div id="content_1">
