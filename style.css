@@ -31,6 +31,8 @@ body{
     background-color: #ff5353;
     grid-area: top_menu;
 }
+
+
 #banner{
     /* background-color: #a8968c; */
     grid-area: banner;  
@@ -65,6 +67,11 @@ body{
     opacity: 1;
     transform: scale(1);
 }
+#banner_btn{
+    z-index: 90;
+}
+
+
 #footer{
     background-color: #ff5353;
     grid-area: footer;

@@ -32,29 +32,31 @@
         </div>
     
         <div id="banner">
+            <div id="banner_btn">
+                <button onclick="">next</button>
+                <button onclick="">prev</button>
+                <button onclick="s_stop();">stop</button>
+                <button onclick="s_play();">play</button>
+            </div>
             <div id="slider">
                 <div class="ban_img"></div>
                 <div class="ban_img"></div>
                 <div class="ban_img"></div>
                 <div class="ban_img"></div>
             </div>
-            <button>next</button>
-            <button>prev</button>
-            <button>stop</button>
-            <button>play</button>
         </div>
         <script id="slider_script">
             const SHOWING_CLASS = "show";
             const firstSlide = document.querySelector(".ban_img:first-child");
-            const Slide = () => {
-            const currentSlide = document.querySelector(`.${SHOWING_CLASS}`);
-            const nextSlide = currentSlide.nextElementSibling;
-            const prevSlide =  currentSlide.previousElementSibling;
-            var slide_T=2500;
+            // const nextSlide = currentSlide.nextElementSibling;
+            // const prevSlide =  currentSlide.previousElementSibling;
+            var slide_T = 2000;
 
-            function autoSlide(slide_T){
+            const Slide = () => {
+                const currentSlide = document.querySelector(`.${SHOWING_CLASS}`);
                 if (currentSlide) {
                     currentSlide.classList.remove(SHOWING_CLASS);
+                    const nextSlide = currentSlide.nextElementSibling;
                     if (nextSlide) {
                     nextSlide.classList.add(SHOWING_CLASS);
                     } else {
@@ -63,13 +65,18 @@
                 } else {
                     firstSlide.classList.add(SHOWING_CLASS);
                 }
-                };
-                setInterval(Slide, slide_T);
+            };
+            setInterval(Slide, slide_T);
+        
+
+            function s_stop(){
+                setInterval(Slide, 99999)
+                console.log("stop")
             }
-            autoSlide(slide_T);
-
-
-
+            function s_play(){
+                setInterval(Slide, slide_T)
+                console.log("play")
+            }
 
         </script>
     
